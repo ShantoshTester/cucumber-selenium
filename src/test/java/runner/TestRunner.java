@@ -6,9 +6,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/features/Login.feature"},
+@CucumberOptions(features = {"src/test/resources/features/Dropdown.feature"},
                  glue = {"stepdefinition"},
-                 dryRun = false, tags = "@Invalid",
+                 dryRun = false, tags = "",
                  plugin = {"pretty"})
 public class TestRunner {
 }

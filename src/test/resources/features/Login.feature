@@ -8,7 +8,6 @@ Feature: Login Feature
     And   I click on login button
     Then  I should see the home-page of the application
 
-  @Invalid
   Scenario: Login as Locked-Out User
     Given I navigate to "https://www.saucedemo.com/"
     When  I am on the login-page of the application
@@ -16,7 +15,6 @@ Feature: Login Feature
     And   I enter "secret_sauce" as password
     And   I click on login button
     Then  I should see the error message "Epic sadface: Sorry, this user has been locked out."
-
 
   Scenario Outline: Login with All Valid Credentials
     Given I navigate to "https://www.saucedemo.com/"

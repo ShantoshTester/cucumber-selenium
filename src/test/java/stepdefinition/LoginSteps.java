@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class LoginSteps {
 
-    WebDriver driver;
+    public static WebDriver driver;
 
     @Before
     public void setUp()
@@ -23,7 +23,7 @@ public class LoginSteps {
     @After
     public void tearDown()
     {
-        driver.quit();
+//        driver.quit();
     }
 
     @Given("I navigate to {string}")
