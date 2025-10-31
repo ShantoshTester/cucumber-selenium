@@ -22,12 +22,13 @@ Feature: Form Filling Feature
     When  I click on home checkbox
     Then  I should see the message "You have selected"
 
+  @practice-form
   Scenario: Practice Form Filling
     Given I navigate to "https://demoqa.com/automation-practice-form"
-    And   I enter first name as "" and last name as ""
+    And   I enter first name as "john" and last name as "kevin"
     And   I enter email as "john@test.com"
     And   I select male as my gender
-    And   I enter my mobile number as "5698989889"
+    And   I enter my mobile number as "9789600120"
     And   I select date of birth from calender
     And   I enter the subject as "test-form filling"
     And   I select music as my hobbies
@@ -39,7 +40,7 @@ Feature: Form Filling Feature
     """
     And   I select state as "NCR"
     And   I select the city as "Delhi"
-    And  I click on submit button
+    And  I click on submit button in form filling
 
 
 
